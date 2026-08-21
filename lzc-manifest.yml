@@ -1,0 +1,23 @@
+application:
+  subdomain: exameow
+  upstreams:
+    - location: /
+      backend: http://exameow:3000/
+  public_path:
+    - /
+
+services:
+  exameow:
+    # ailm32442/exameow:1.4.3
+    image: docker.1ms.run/ailm32442/exameow:1.4.3
+    environment:
+      - AI_ENDPOINT={{.U.ai_endpoint}}
+      - AI_API_KEY={{.U.ai_api_key}}
+      - AI_MODEL={{.U.ai_model}}
+      - PORT=3000
+      - RUST_LOG=info
+      - ADMIN_TOKEN={{ stable_secret "admin_token" }}
+      - EXAM_DB_PATH=/app/data/exameow.db
+      - ADMIN_TOKEN_FILE=/app/data/admin_token.txt
+    binds:
+      - /lzcapp/var/data:/app/data
