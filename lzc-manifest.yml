@@ -5,11 +5,11 @@ application:
       backend: http://exameow:3000/
   public_path:
     - /
-
 services:
   exameow:
     # ailm32442/exameow:1.4.3
-    image: docker.1ms.run/ailm32442/exameow:1.4.3
+    # upstream: ailm32442/exameow:1.4.3
+    image: registry.lazycat.cloud/czyt/ailm32442/exameow:62cddfe3400128af
     environment:
       - AI_ENDPOINT={{.U.ai_endpoint}}
       - AI_API_KEY={{.U.ai_api_key}}
