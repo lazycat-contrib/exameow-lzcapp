@@ -12,7 +12,7 @@ locales:
     name: "exameow"
     description: "AI-powered exam question generator. Upload study materials, get exam questions in seconds. Open source, local-first, cross-platform."
   zh:
-    name: "exameow"
+    name: "过了喵"
     description: "AI 驱动的考试题目生成器。上传学习材料，几秒内生成试题。开源、本地优先、跨平台。"
 
 permissions:
