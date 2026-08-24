@@ -1,12 +1,11 @@
 package: community.lazycat.app.exameow
-version: 1.4.3-patch1
+version: 1.4.3
 name: exameow
 description: "AI-powered exam question generator. Upload study materials, get exam questions in seconds. Open source, local-first, cross-platform."
 min_os_version: 1.5.0
 author: heshengtao
 license: MIT
 homepage: https://github.com/heshengtao/exameow
-
 locales:
   en:
     name: "exameow"
@@ -14,7 +13,6 @@ locales:
   zh:
     name: "过了喵"
     description: "AI 驱动的考试题目生成器。上传学习材料，几秒内生成试题。开源、本地优先、跨平台。"
-
 permissions:
   required:
     - net.internet
