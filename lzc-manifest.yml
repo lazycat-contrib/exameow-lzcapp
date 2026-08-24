@@ -5,6 +5,18 @@ application:
       backend: http://exameow:3000/
   public_path:
     - /
+  injects:
+    - id: open-save-chooser
+      on: browser
+      when:
+        - /*
+      do:
+        - src: file:///lzcapp/pkg/content/lazycat-injects/lzc-file-chooser-inject.js
+          params:
+            locale: auto
+            hooks:
+              fileSystemAccess: true
+              fileInput: true
 services:
   exameow:
     # ailm32442/exameow:1.4.3
