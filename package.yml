@@ -1,5 +1,5 @@
 package: community.lazycat.app.exameow
-version: 1.4.3
+version: 1.4.5
 name: exameow
 description: "AI-powered exam question generator. Upload study materials, get exam questions in seconds. Open source, local-first, cross-platform."
 min_os_version: 1.5.0
