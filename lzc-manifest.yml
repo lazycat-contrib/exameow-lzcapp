@@ -20,8 +20,8 @@ application:
 services:
   exameow:
     # ailm32442/exameow:1.4.3
-    # upstream: ailm32442/exameow:1.4.5
-    image: registry.lazycat.cloud/czyt/ailm32442/exameow:dc52aa8491fa6d3a
+    # upstream: ailm32442/exameow:1.5.0
+    image: registry.lazycat.cloud/czyt/ailm32442/exameow:d873bbfd66ab1c28
     environment:
       - AI_ENDPOINT={{.U.ai_endpoint}}
       - AI_API_KEY={{.U.ai_api_key}}
